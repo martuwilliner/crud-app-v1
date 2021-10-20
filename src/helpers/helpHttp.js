@@ -8,7 +8,7 @@ export const helpHttp= () =>{
         options.signal = controller.signal;
 
         options.method = options.method || "GET"; /* si no especifican metodo por default el GET */
-        options.headers = option.headers ? {...defaultHeader, ...options.headers} : defaultHeader;
+        options.headers = options.headers ? {...defaultHeader, ...options.headers} : defaultHeader;
     
         options.body = JSON.stringify(options.body) || false;
     
