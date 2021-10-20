@@ -2,36 +2,9 @@ import React, { useState } from 'react';
 import CrudForm from './CrudForm';
 import CrudTable from './CrudTable';
 
-const initialDb= [
-    {
-        id: 1,
-        name: "Martin",
-        lastname: "Williner"
-    },
-    {
-        id: 2,
-        name: "Maria",
-        lastname: "Visintin"
-    },
-    {
-        id: 3,
-        name: "Nilda",
-        lastname: "Leal"
-    },
-    {
-        id: 4,
-        name: "Laura",
-        lastname: "Casuso"
-    },
-    {
-        id: 5,
-        name: "Lautaro",
-        lastname: "Aravena"
-    },
-];
 
-const CrudApp = () => {
-    const [db, setDb] = useState(initialDb);
+const CrudApi = () => {
+    const [db, setDb] = useState([]);
 
     const [dataToEdit, setDataToEdit] = useState(null)
 
@@ -76,4 +49,4 @@ const CrudApp = () => {
     )
 }
 
-export default CrudApp
+export default CrudApi
